@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+}
+.container-1{
+  display: flex;
+  /*
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items:center;
+  align-items:baseline;
+  flex-direction: row; to make flex horizontal
+  flex-direction: column; to make flex vertical
+  */
+
+}
+.headtime h1{
+  padding-top: 30px;
+  padding: 20px;
+
+}
+.headtime p{
+  position: relative;
+  top: 20px;
+  padding-left: 40px;
+
+}
+  .container-1 div {    /* .classname div apply same style to alll the elements of the div*/
+    padding:15px;
+    }
+/*---------------------------------box1-----------------*/
+  .box-1{
+    display: flex;
+    flex: 4;
+  }
+  .subbox1{
+    flex:3;
+  }
+
+  .subbox2{
+    flex: 2;
+}
+.subbox2 p{
+  text-align: justify;
+  line-height: 1.7em;
+}
+.subbox2 a:hover{
+  text-decoration: underline;
+}
+  .box-1 img{
+    box-shadow: var(--shadow);
+    width: 480px;
+    height: 300px;
+  }
+  .video {
+    background-image: url("../images/player.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-bottom: 3px;
+    padding-left: 25px;
+}
+.textlink{
+  padding-left: 25px;
+}
+/*---------------------------------box2-----------------*/
+  .box-2{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+      border-bottom:  1px #ccc solid;
+  }
+
+    .box-2 > a > p{
+
+      text-align: left;
+      line-height: 1.1em;
+      padding: 15px;
+      border-bottom:  1px #ccc solid;
+    }
+.box-2 :hover{
+    background-color: #F5F5F5;
+}
+.para{
+  display: flex;
+  align-items: flex-start;
+}
+.para div {    /* .classname div apply same style to alll the elements of the div*/
+  padding:20px;
+  text-align:left;
+  line-height: 1.5em;
+
+
+}
+.p1{
+  flex:3;
+  background-color:#E5E5E5;
+}
+.finalimage{
+  position: relative;
+  left: 60px;
+  bottom: 20px;
+  padding: .5px;
+  text-align:center;
+  height: 300px;
+  width: 500px;
+  box-shadow: var(--shadow);
+}

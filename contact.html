@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
-
-    <title>Contact-us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <title>Connections News</title>
   </head>
   <body>
     <div class="wrapper">
@@ -25,6 +24,7 @@
           <ul>
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="china.html">China</a> </li>
+            <li> <a href="news.html">News</a> </li>
             <li> <a href="world.html">World</a> </li>
             <li> <a href="Business.html">Business</a> </li>
             <li> <a href="culture.html">Culture</a> </li>
@@ -38,9 +38,59 @@
 
             <!--News-->
 
-            <!--Footer-->
+          <a href="#" class="go-top">Go Top</a>
+            <!---==============================Javascript=========================================================-->
+                <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    //Show or hide Go-Top button
+                    $(window).scroll(function(){
+                      if($(this).scrollTop()>700){
+                        $('.go-top').fadeIn(200);
+                      }else {
+                        $('.go-top').fadeOut(200);
+                      }
+
+                    })
+
+                    //Animate the scroll to top
+                    $('.go-top').click(function(event){
+                      event.preventDefault();
+                      $('html,body').animate({scrollTop:0},300);
+
+                    })
+
+                })
+
+                </script>
+                          <!--Footer-->
             <footer>
-                 <p>Connections News &copy 2018</p>
+              <div class="footer_container">
+                <p>CONNECTIONS News &copy 2018</p>
+                <p> All rights reserved. The content (including but not limited to text, photo, multimedia information, etc) published in this site belongs to Connections.
+</p>
+<p>License for publishing multimedia online *****</p>
+
+              </div>
+              <div class="menu">
+                  <ul>
+                    <li><a href="#">About Connections News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Advertise on Site</a></li>
+                  </ul>
+              </div>
+              <div class="social">
+
+                    <ul>
+                      <p>FOLLOW US</p>
+
+                    </ul>
+              </div>
+
+
+
+
+
             </footer>
     </div>
        <!--Wrapper Ends -->

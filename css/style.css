@@ -15,13 +15,6 @@ body{
     background-color: #fff;
     line-height: 1.1;
 }
-.btn{
-    background: #1D3815;
-    color: var(--light);
-    padding: 0.6rem 1.3rem;
-    text-decoration: none;
-    border: 0;
-}
 
 img {
   max-width: 100%;
@@ -30,10 +23,9 @@ img {
 .wrapper {
   margin: 20px 100px;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
 }
 a {
-
   text-decoration: none;
   padding: .5rem;
   text-align: left;
@@ -41,7 +33,43 @@ a {
 }
  a:hover{
   text-decoration:none;
+   color: #1167A8;
   }
+  .link a {
+   border-left: 2px solid #FA0400;
+   padding: 0.5rem;
+   text-align: center;
+   color: var(--light);
+   text-transform: uppercase;
+   font-size: .7rem;
+
+ }
+ .link  :hover {
+   text-decoration: underline;
+   color: var(--light);
+ }
+ .whitebackgroundlink{
+   border-left: 2px solid #FA0400;
+   padding: 0.3rem;
+   text-align: left;
+  text-transform: uppercase;
+   font-size: .7rem;
+   margin: .1rem .7rem;
+
+ }
+ .whitebackgroundlink:hover{
+text-decoration: underline;
+ }
+  .sectionlink  {
+  border-left: 2px solid #0E3996;
+  text-align: left;
+  padding: .8rem;
+  font-size: 1.2rem;
+
+
+}
+
+
   .boxlink a {
     background: var(--primary);
     text-decoration: none;
@@ -67,13 +95,21 @@ a {
 }
 
 #branding img{
-  width: 80px;
+  width: 100px;
   height: 50px;
   float:left;
 }
-.highlight{
+#highlight{
   color:#1D3815;
   font-weight:bold;
+  position: relative;
+  top: 12px;
+}
+#news{
+  color:#1D3815;
+  font-size: 1.5em;
+  position: relative;
+  top: 14px;
 }
 /*  Search bar*/
 
@@ -85,13 +121,15 @@ a {
   border-radius: 5px;
   font-size: 13px;
   padding: 4px;
+  position: relative;
+  top: 20px;
 
 }
 
 /* -------------------------------------Navigation -----------------------------------*/
 .main-nav ul {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 10px;
   padding: 0;
   list-style: none;
   grid-template-columns: repeat(9, 1fr);
@@ -117,7 +155,7 @@ a {
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
-    'showcase showcase top-blog-a top-blog-a top-blog-e'
+    'showcase showcase  top-blog-a top-blog-e top-blog-e'
     'showcase showcase top-blog-c top-blog-d top-blog-b';
 }
 /* -----------------------------------------mainblog *-----------------------------------------*/
@@ -147,20 +185,7 @@ a {
 text-decoration: underline;
   color: var(--light);
 }
- .link a {
-  border-left: 2px solid #FA0400;
-  padding: 0.5rem;
-  text-align: center;
-  color: var(--light);
-  text-transform: uppercase;
-  font-size: .7rem;
 
-
-}
-.link  :hover {
-text-decoration: underline;
-  color: var(--light);
-}
 
 /* -----------------------------------------------Top Blog---------------------------------- */
 .top-blog{
@@ -265,40 +290,77 @@ text-decoration: underline;
   color: var(--light);
 }
 /*-----------------------News------------- Boxes---------------------------------------------- */
-.newsbox {
+.newsbox1 {
   display: grid;
   grid-gap: 10px;
+
   grid-template-areas:
-  'box1 box2 box3 box3'
-  'box5 box2 box3 box3'
-  'box6 box2 box4 box4';
+  'box1 box2 box3';
 }
+.newsbox2 {
+  display: grid;
+  grid-gap: 15px;
+  background-color: #ddd;
+  grid-template-areas:
+  'box1 box2 box3'
+
+}
+.newsbox3 {
+  display: grid;
+  grid-gap: 15px;
+  background-color: #DAEAB4;
+  grid-template-areas:
+  'box1 box2 box3 box4'
+
+}
+
 .box1  {
   grid-area: box1;
-  background: url(../img/mars.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding: .5rem;
-  text-align: center;
-  color: var(--light);
   box-shadow: var(--shadow);
-
+  padding: .1rem;
+}
+.box1 h3  {
+  padding: .1rem .5rem;
+}
+.box1 p  {
+  padding: .1rem .5rem;
 }
 
 .box2  {
   grid-area: box2;
-  background: var(--primary);
-  text-align:center;
-  padding: 1.5rem 1.0rem;
+  box-shadow: var(--shadow);
+  padding: .1rem;
 /*  box-shadow: var(--shadow);*/
+}
+.box2 h3  {
+padding: .1rem .5rem;
+}
+.box2 p  {
+  padding: .1rem .5rem;
 }
 .box3  {
   grid-area: box3;
-  background: var(--primary);
-  text-align:center;
-  padding: 1.0rem 1.2rem;
-/*  box-shadow: var(--shadow);*/
+  box-shadow: var(--shadow);
+  padding: .1rem;
 }
+.box3 h3  {
+    padding: .1rem .5rem;
+}
+.box3 p  {
+padding: .1rem .5rem;
+}
+.box4  {
+  grid-area: box4;
+  box-shadow: var(--shadow);
+  padding: .1rem;
+}
+.box4 h3  {
+    padding: .1rem .5rem;
+}
+.box4 p  {
+padding: .1rem .5rem;
+}
+/*
 .box3 p{
   text-align:justify;
   font-size: 15px;
@@ -317,58 +379,10 @@ text-decoration: underline;
   background-color: #fff;
   border-radius: 10px;
 
-}
-.box4  {
-  grid-area: box4;
-  background: var(--primary);
-  text-align: center;
+}*/
 
-/*  box-shadow: var(--shadow);*/
-}
-.box4blog {
-  grid-area: top-blog-a;
-  background: url(../img/world.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding:5rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items:start;
-  justify-content:flex-end;
-  position: relative;
-
-}
-.box4blog p {
-  font-size: 1.1rem;
-  position:relative;
-  padding-top: 10px;
-  margin-bottom: 0;
-  color: var(--light);
-  text-align: center;
-}
-.box5  {
-  grid-area: box5;
-  background: url(../img/mars.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding: .5rem;
-  text-align: center;
-  color: var(--light);
-    box-shadow: var(--shadow);
-}
-.box6  {
-  grid-area: box6;
-  background: url(../img/mars.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding: .5rem;
-  text-align: center;
-  color: var(--light);
-  box-shadow: var(--shadow);
-}
-/*-------------------------------------------- Boxes----------------------------------------------- */
-.boxes {
+/*----------------------------world---------------- Boxes----------------------------------------------- */
+/*.boxes {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -379,9 +393,9 @@ text-decoration: underline;
   padding: 1.5rem 2rem;
   /*  box-shadow: var(--shadow);*/
 }
-.box p{
+/*.box p{
   text-align:inherit;
-}
+}*/
 /* ---------------Busniness--------------------------------Info--------------------- */
 .info {
   background: var(--primary);
